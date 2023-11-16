@@ -1,0 +1,209 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    background: #8A2387;  
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387); 
+background: linear-gradient(to right, #00bfff, #00bdfc, #1316e2); 
+    width:100%;
+    height:100%;
+}
+:root{
+    --bgcolor:#F27121;
+    --text-color:#000;
+    --secBgcolor:#dbdbdb;
+    --icon-hover:#000;
+
+}
+.dark{
+    --bgcolor:#26242e;
+    --text-color:#fff;
+    --shadow-color:#000;
+    --secBgcolor:#fff;
+    --icon-hover:#b7df69;
+}
+
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:60%;
+    height:fit-content;
+    border-radius:5px;
+    background-color: var(--bgcolor);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    overflow: hidden;
+}
+.container::before, .container::after{
+    content:"";
+    position:absolute;
+    top:-40px;
+    left:-40px;
+    border-radius:50%;
+    background-color:#bfbfbf;
+    z-index:-1;
+    width: fit-content;
+}
+.container::before{
+    width:160px;
+    height:160px;
+    opacity: .5;
+   
+}
+.container::after{
+    width:100px;
+    height:100px;
+    opacity:.8;
+}
+input{
+    position:absolute;
+    right:5px;
+    top:5px;
+  cursor:pointer;
+    -webkit-appearance:none;
+    width:38px;
+    height:18px;
+    background-color:var(--secBgcolor);
+    border-radius:10px;
+    outline:none;
+}
+input::before{
+    content:"";
+    position: absolute;
+    top:2px;
+    left:2px;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background-color:var(--bgcolor);
+    transition: .5s ease;
+}
+
+input:checked::before{
+    transform:translate(20px);
+}
+.img{
+    width:250px;
+    height:220px;
+    background:url('profile-pic.png') top/cover;
+    object-fit:cover;
+    border-radius: 50% 50% 50%/50% 50% 50%;
+    margin:20px 0 0  0;
+    align-items: center;
+}
+.name{
+    margin-top:5px;
+    padding:3px;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family:"Oswald";
+}
+.best{
+    text-align:center;
+    padding:5px;
+    color:var(--text-color);
+    font-size:.77rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+
+}
+
+.prof{
+    align-items: center;
+    text-align: justify;
+    padding:5px;
+    color:var(--text-color);
+    width: 70%;
+    font-size:.86rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 10px;
+}
+
+.buttons{
+    display:contents;
+    align-items: center;
+    vertical-align: top;
+}
+
+.button{
+    margin: 5px;
+    font-family: 'Oswald', 'Courier New', monospace, serif;
+    font-weight: 300;
+}
+.button .down{
+    color: #000;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-weight: bolder;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: .9rem;
+    transition: 1s;
+}
+
+.button .down:hover{
+    background-color: white;
+    transition: 1s;
+}
+
+.button .hire{
+    color: #000;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-weight: bolder;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: .9rem;
+    transition: 1s;
+}
+
+.button .hire:hover{
+    background-color: white;
+    transition: 1s;
+}
+
+.link{
+    margin-top:30px;
+}
+
+.link a{
+    text-decoration:none;
+    padding:5px;
+    font-size:1.3rem;
+    color:var(--text-color);
+    transition: 2.s ease;
+}
+
+.web a{
+    text-decoration: none;
+    color: #ddd;
+    transition: 1s;
+}
+    
+.web {
+    font-family: 'Oswald', 'Courier New', monospace, serif;
+    font-weight: 100;
+    margin: 10px;
+    color:#ddd;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.web a:hover{
+    color: #bfbfbf;
+    transition: 1s;
+}

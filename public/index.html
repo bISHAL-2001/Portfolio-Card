@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bishal Kumar Ghosh</title>
+  <script>
+    function showhide() {
+        if (document.getElementById('div_one').style.display == 'none') {
+          document.getElementById('div_one').style.display = 'block';
+          document.getElementById('div_two').style.display = 'none';
+        }
+        else {
+          document.getElementById('div_one').style.display = 'none';
+          document.getElementById('div_two').style.display = 'block';
+        }
+    }
+  </script>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="checkbox" onchange="toggle()">
+    <div class="img"></div>
+    <p class="name">BISHAL KUMAR GHOSH</p>
+    <p class="best">PYTHON DEVELOPER</p>
+    <p class="prof">I'm proficient in Python, C, Mongo DB, MySQL, and Flutter Dev. I excel in communication, teamwork, time management, adaptability, and empathetic collaboration within diverse teams.</p>
+      
+    <div class="buttons">
+      <div id="div_one" class="button" ><a href="Bishal_Kumar_Ghosh_CV.pdf" target="blank" class="down" onclick="showhide();">DOWNLOAD CV <i class="fa fa-download"></i></a></div>
+      <div id="div_two" class="button" style="display: none"><a href="mailto: bkg.official.0601@gmail.com" target="blank" class="hire">HIRE ME <i class="fa fa-user"></i></a></div>
+    </div>
+    
+    <div class="link">
+      <a href="https://wa.me/+918900533789" target="blank"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> </a>
+      <a href="https://www.instagram.com/prime_calculus/" target="blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i> </a>
+      <a href="https://www.linkedin.com/in/bishal-kumar-ghosh-15886b201/" target="blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> </a>
+      <a href="https://www.hackerrank.com/profile/bkg8900533789" target="blank"><i class="fa-brands fa-hackerrank"></i> </a>
+    </div>
+    <div class="web"><a href="https://bishal-kumar-ghosh-portfolio-06-2001.web.app" target="blank">VISIT MY PORTFOLIO <i class="fa fa-globe" aria-hidden="true"></i></a></div>
+  </div>
+  <script  src="script.js"></script>
+</body>
+</html>
